@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<link rel = "stylesheet" type = "text/css" href ="./style.css">
+	<script rel = "script" type = "text/javascript" src = "./script.js"></script>
+	<marquee behavior="slid" direction="left"> This is a table puzzle game that you have to guess a picture I concealed! The number of your guess is limited, so Good Luck and Have a Fun ! :]</marquee>
+</header>
+
+<section>
+	<h1> TABLE </h1>
+	<p id = "count"> 0/44 </p>
+		<table id = "table">
+			<tr class = "row">
+				<th></th>
+				<th>0</th>
+				<th>5</th>
+				<th>1<br>2</th>
+				<th>1<br>2</th>
+				<th>1<br>2<br>4</th>
+				<th>1<br>1<br>2</th>
+				<th>1<br>1<br>2</th>
+				<th>1<br>2<br>4</th>
+				<th>1<br>2</th>
+				<th>1<br>2</th>
+				<th>5</th>
+				<th>0</th>
+			</tr>
+
+			<tr class = "row" id = "row1">
+				<td id = "row_h"> 0 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row2">
+				<td id = "row_h"> 4 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row3">
+				<td id = "row_h"> 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row4">
+				<td id = "row_h"> 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row5">
+				<td id = "row_h"> 1 1 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row6">
+				<td id = "row_h"> 1 1 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row7">
+				<td id = "row_h"> 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row8">
+				<td id = "row_h"> 1 1 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row9">
+				<td id = "row_h"> 2 4 2 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row10">
+				<td id = "row_h"> 3 3 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row11">
+				<td id = "row_h"> 6 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+
+			<tr class = "row" id = "row12">
+				<td id = "row_h"> 4 </td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell correct_cell" onclick="mark_n_count(this);"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+				<td class = "cell" onclick="mark_n_count(this)"></td>
+			</tr>
+	</table>
+	<br>
+	<input type = "button" id = "reset_btn" value = "RESET" onclick = "reset_table()"/>
+
+	<input type = "button" id = "reveal_btn" value = "REVEAL" onclick ="reveal_table()"/>
+	<input type = "button" id = "hide_btn" value = "HIDE" onclick = "hide_table()"/>
+</section>
+
+<footer>
+<p> Copyright &copy; 2018. All Rights Reserved. Designed by Daniel Lee</p>
+</footer>
+</html>
